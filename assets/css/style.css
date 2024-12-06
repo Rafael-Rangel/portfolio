@@ -58,7 +58,9 @@ span.category {
 html {
 	cursor: url(../img/images/icones/cursor.png), auto !important;
 }
-
+a:hover, button:hover {
+	cursor: url(../img/images/icones/cursos-ponti.png), pointer !important;
+  }
 .card-projects {
     overflow-y: scroll; /* Garante que a barra de rolagem esteja sempre visível */
     height: clamp(743.83px, 50vw, 819.34px); /* Mantém o ajuste responsivo de altura */
@@ -88,6 +90,68 @@ html {
     scrollbar-color: #888 #f1f1f1; /* Define a cor do "thumb" e do track */
 }
 
+.image.text-center img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px; /* Pode ser ajustado para imagens com bordas arredondadas */
+}
+
+/* Efeito de hover: aumenta a imagem */
+.image.text-center:hover img {
+    transform: scale(1.2); /* Aumenta a imagem 20% */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destacar o efeito */
+}
+
+/* Ajuste opcional para bordas arredondadas */
+.image.text-center img[style*="border-radius: 50%"] {
+    border-radius: 50%;
+}
+
+/* Estilo para o contêiner da imagem dentro de .services-item */
+.services-item .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Impede que a imagem ultrapasse o contêiner */
+}
+
+/* Estilo para a imagem dentro de .services-item */
+.services-item .image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a animação */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Ajuste para bordas arredondadas, se necessário */
+}
+
+/* Efeito de hover na imagem */
+.services-item:hover .image img {
+    transform: scale(1.2); /* Aumenta a imagem em 20% */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para destacar o efeito */
+}
+
+/* Estilo para as imagens dentro de .services-item */
+.services-item .image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; /* Impede que a imagem ultrapasse o contêiner */
+  }
+  
+  /* Estilo para a imagem dentro de .services-item */
+  .services-item .image img {
+	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a animação */
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px; /* Ajuste para bordas arredondadas, se necessário */
+  }
+  
+  /* Efeito de hover nas imagens */
+  .services-item:hover .image img {
+	transform: scale(1.1); /* Aumenta a imagem em 10% */
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Sombra para destacar o efeito */
+  }
+  
 
 :root {
 	--font-family: "Bricolage Grotesque", sans-serif;
@@ -430,7 +494,7 @@ p {
 .header-area .header-right-info .lets-talk-btn {
 	background-color: var(--black);
 	border-radius: 8px;
-	padding: 16px 24px;
+	padding: 16px 20px;
 	font-size: 16px;
 	font-weight: 600;
 	color: var(--white);
@@ -675,7 +739,7 @@ p {
 }
 
 .work-experiance-card .work-experiance-slider {
-	animation: scrollY 10s linear infinite;
+	animation: scrollY 30s linear infinite;
 }
 
 @keyframes scrollY {
@@ -2206,7 +2270,7 @@ p {
 
 .dark-theme .common-button-groups .btn.btn-copy {
 	border: 1px solid var(--black);
-	color: var(--dark-theme-light-white);
+	color: #fff;
 }
 
 .dark-theme .common-button-groups .btn.btn-copy .icon {

@@ -29,14 +29,11 @@
 /*=============================
 	01. Variable CSS start
 ===============================*/
-ul.work-experiance-slider.list-unstyled {
-    animation: scrollY 30s linear infinite !important;
-}
 .work-experiance-card .work-experiance-slider {
     animation: scrollY 30s linear infinite !important;
 }
 ul.work-experiance-slider.list-unstyled {
-    animation: scrollY 30s linear infinite !important;
+    animation: scrollY 65s linear infinite !important;
 }
 .clounas{
     display: flex;

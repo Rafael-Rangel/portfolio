@@ -29,6 +29,9 @@
 /*=============================
 	01. Variable CSS start
 ===============================*/
+.work-experiance-card .work-experiance-slider {
+    animation: scrollY 30s linear infinite !important;
+}
 .clounas{
     display: flex;
     justify-content: center;

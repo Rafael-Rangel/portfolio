@@ -190,7 +190,7 @@
   .profile-card .image img {
     object-fit: cover;
     height: 100%;
-    width: 55%;
+    width: 100%;
 }
 
   .common-button-groups .btn {

@@ -1,0 +1,32 @@
+#sf-stage {
+	position: fixed;
+	inset: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0.72;
+}
+
+#page-content {
+	position: relative;
+	z-index: 1;
+}
+
+html {
+	scroll-behavior: auto;
+}
+
+.expertise-item,
+.services-item,
+.social-media-icon a,
+.btn-call,
+.lets-talk-btn {
+	transform-origin: center center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#sf-stage {
+		display: none;
+	}
+}

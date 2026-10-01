@@ -552,10 +552,14 @@ p {
 	background-color: var(--background);
 	border-radius: 8px;
 	overflow: hidden;
+	aspect-ratio: 16 / 10;
 }
 
 .profile-card .image img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 62% 28%;
 }
 
 .profile-card .text {
